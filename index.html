@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Шарм в Ростове-на-Дону: салон красоты на проспекте Ленина. 3D-примерка причёски и цвета, услуги, запись и контакты.">
+  <title>Шарм — салон красоты в Ростове-на-Дону</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/page.css">
+  <script type="importmap">
+    {"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}
+  </script>
+  <script type="module" src="./assets/js/main.js"></script>
+</head>
+<body data-theme="jewelry">
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="Шарм, главная">
+      <span class="brand-mark">Ш</span>
+      <span>Шарм</span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#process">Как проходит визит</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-phone" href="https://wa.me/79281542945" target="_blank" rel="noopener">Написать в WhatsApp</a>
+  </header>
+
+  <main id="main" class="page-main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Салон красоты · Ростов-на-Дону</p>
+        <h1 class="display" id="hero-title">Образ,<br><em>который идёт вам.</em></h1>
+        <p class="hero-lede">Стрижки, окрашивание, укладки и уход. Примерьте причёску и цвет на 3D-модели ещё до кресла мастера — и приходите на запись с готовой идеей.</p>
+        <div class="button-row">
+          <a class="button" href="https://wa.me/79281542945" target="_blank" rel="noopener">Записаться в WhatsApp <span aria-hidden="true">↗</span></a>
+          <button class="button button-secondary" type="button" data-scroll-to="#atelier">Примерить образ <span aria-hidden="true">↓</span></button>
+        </div>
+        <ul class="hero-facts">
+          <li>Стрижки и окрашивание</li>
+          <li>Укладки и уход</li>
+          <li>Маникюр и педикюр</li>
+        </ul>
+      </div>
+
+      <div class="scene-shell" id="atelier" data-scene="salon" data-scene-state="loading">
+        <div class="scene-viewport" data-scene-viewport>
+          <div class="scene-poster" style="--poster-bg:#efe1da" role="img" aria-label="Бюст с причёской, статичная версия">
+            <svg viewBox="0 0 800 600" aria-hidden="true">
+              <ellipse cx="400" cy="548" rx="190" ry="34" fill="#d3bbb2"/>
+              <rect x="368" y="470" width="64" height="58" rx="18" fill="#e8d6cd"/>
+              <path d="M290 470 Q400 396 510 470 L510 512 L290 512 Z" fill="#ecdcd4"/>
+              <ellipse cx="400" cy="330" rx="98" ry="120" fill="#f2e2d8"/>
+              <path d="M300 300 Q296 186 400 176 Q504 186 500 300 Q512 400 470 470 L452 470 Q474 360 460 268 Q400 238 340 268 Q326 360 348 470 L330 470 Q288 400 300 300 Z" fill="#6b3a2a"/>
+              <ellipse cx="400" cy="300" rx="62" ry="76" fill="#f6e9e0"/>
+              <g fill="#c19a8b"><ellipse cx="368" cy="318" rx="7" ry="10"/><ellipse cx="432" cy="318" rx="7" ry="10"/></g>
+            </svg>
+          </div>
+          <span class="scene-loading">Загружаем 3D-примерку…</span>
+        </div>
+        <div class="scene-toolbar">
+          <div class="control-stack">
+            <span class="control-label" id="style-label">Причёска</span>
+            <div class="segmented" role="group" aria-labelledby="style-label">
+              <button class="chip" type="button" data-style="long" aria-pressed="true">Длинные</button>
+              <button class="chip" type="button" data-style="bob" aria-pressed="false">Каре</button>
+              <button class="chip" type="button" data-style="bun" aria-pressed="false">Пучок</button>
+            </div>
+          </div>
+          <div class="control-stack">
+            <span class="control-label" id="color-label">Цвет волос</span>
+            <div class="swatches" role="group" aria-labelledby="color-label">
+              <button class="swatch" type="button" style="--swatch:#4b2e20" data-color="chocolate" aria-pressed="true" aria-label="Шоколад" title="Шоколад"></button>
+              <button class="swatch" type="button" style="--swatch:#b5623a" data-color="copper" aria-pressed="false" aria-label="Медь" title="Медь"></button>
+              <button class="swatch" type="button" style="--swatch:#c9a876" data-color="wheat" aria-pressed="false" aria-label="Пшеница" title="Пшеница"></button>
+              <button class="swatch" type="button" style="--swatch:#e6ded0" data-color="blond" aria-pressed="false" aria-label="Холодный блонд" title="Холодный блонд"></button>
+              <button class="swatch" type="button" style="--swatch:#7c2436" data-color="cherry" aria-pressed="false" aria-label="Вишня" title="Вишня"></button>
+            </div>
+          </div>
+          <div class="control-group">
+            <button class="icon-button" type="button" data-motion aria-pressed="true">Пауза</button>
+            <button class="icon-button" type="button" data-reset-camera>Сбросить вид</button>
+          </div>
+          <p class="scene-status" data-scene-status aria-live="polite">Выберите причёску и цвет — модель можно вращать.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-bar" aria-label="Сведения о салоне">
+      <span><strong>4,8 на Яндекс Картах</strong> · 232 оценки</span>
+      <span>Проспект Ленина, 54 · Ростов-на-Дону</span>
+      <span>Запись по WhatsApp и Telegram</span>
+    </div>
+
+    <section class="content-section" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <p class="eyebrow">Услуги салона</p>
+        <div>
+          <h2 id="services-title">От стрижки<br>до полного образа.</h2>
+          <p>Состав услуг и цены в демо-версии указаны как пример структуры сайта. При запуске заменим на актуальный прайс салона.</p>
+        </div>
+      </div>
+      <div class="category-grid">
+        <article class="category-item"><span>01</span><h3>Стрижки</h3><p>Женские и мужские стрижки, работа с формой и текстурой волос.</p></article>
+        <article class="category-item"><span>02</span><h3>Окрашивание</h3><p>Тонирование, сложные техники и работа с оттенком под ваш типаж.</p></article>
+        <article class="category-item"><span>03</span><h3>Укладки</h3><p>Повседневные и вечерние укладки, подготовка к съёмкам и событиям.</p></article>
+        <article class="category-item"><span>04</span><h3>Уход за волосами</h3><p>Восстановление и поддержание качества волос после окрашивания.</p></article>
+        <article class="category-item"><span>05</span><h3>Маникюр и педикюр</h3><p>Аккуратная работа с формой и покрытием, дизайн по вашему запросу.</p></article>
+        <article class="category-item"><span>06</span><h3>Брови и макияж</h3><p>Оформление бровей и макияж на каждый день или к событию.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section" id="process" aria-labelledby="process-title">
+      <div class="split-feature">
+        <figure>
+          <img class="real-photo" src="./assets/images/atelier.svg" alt="Стилизованная иллюстрация интерьера салона с зеркалом и креслом" width="800" height="1000" loading="lazy">
+          <figcaption class="photo-caption">Иллюстрация для демо-версии · при запуске заменим на фотографии салона</figcaption>
+        </figure>
+        <div class="feature-copy">
+          <p class="eyebrow">Как проходит визит</p>
+          <h2 id="process-title">Сначала идея.<br>Потом кресло мастера.</h2>
+          <p>Покажите мастеру выбранные причёску и цвет из 3D-примерки или свои референсы. Так первый разговор начинается не с нуля, а с конкретного образа.</p>
+          <ol class="process-list">
+            <li><div><strong>Выберите образ</strong><p>Примерьте причёску и оттенок в 3D или пришлите фотографии, которые нравятся.</p></div></li>
+            <li><div><strong>Обсудите с мастером</strong><p>Состояние волос, возможный результат, время и стоимость работы.</p></div></li>
+            <li><div><strong>Приходите на запись</strong><p>Подтверждение времени и рекомендации по уходу после процедуры.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-heading">
+        <p class="eyebrow">Отзывы · демо-текст</p>
+        <div><h2 id="reviews-title">Что отмечают клиенты.</h2></div>
+      </div>
+      <div class="review-grid">
+        <figure class="review-card">
+          <blockquote>«Пример отзыва: мастер помогла подобрать оттенок и стрижку под мой тип лица — теперь укладка занимает десять минут»</blockquote>
+          <figcaption><span>Демо-отзыв</span><a href="https://yandex.ru/maps/org/sharm/1266150798/" target="_blank" rel="noopener">Карточка на Яндекс Картах ↗</a></figcaption>
+        </figure>
+        <figure class="review-card">
+          <blockquote>«Пример отзыва: записалась вечером, всё объяснили по уходу после окрашивания, результат совпал с обсуждённым»</blockquote>
+          <figcaption><span>Демо-отзыв</span><a href="https://yandex.ru/maps/org/sharm/1266150798/reviews/" target="_blank" rel="noopener">Отзывы на Яндекс Картах ↗</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">Перед записью</p>
+        <div><h2 id="faq-title">Частые вопросы.</h2></div>
+      </div>
+      <div class="faq-list">
+        <details><summary>Можно ли прийти со своим референсом?</summary><p>Да, и это лучший вариант: мастер оценит состояние волос и скажет, как приблизиться к образу. Дополнительно можно выбрать оттенок в 3D-примерке на этой странице.</p></details>
+        <details><summary>Как записаться?</summary><p>Напишите в WhatsApp или Telegram: укажите услугу, желаемое время и, если есть, референсы. Актуальные цены и свободные окна подтвердит администратор.</p></details>
+        <details><summary>Где находится салон?</summary><p>Ростов-на-Дону, проспект Ленина, 54. Точный вход и время работы уточняйте при записи — маршрут можно открыть по ссылке на Яндекс Карты.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-panel" id="contacts" aria-labelledby="contacts-title">
+      <div>
+        <p class="eyebrow">Запись</p>
+        <h2 id="contacts-title">Покажите мастеру<br>свой будущий образ.</h2>
+        <p>Напишите услугу и удобное время. Если выбрали причёску в 3D — пришлите скриншот или название оттенка.</p>
+        <div class="button-row">
+          <a class="button" href="https://wa.me/79281542945" target="_blank" rel="noopener">Написать в WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://t.me/borzyaki" target="_blank" rel="noopener">Telegram <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <dl class="contact-methods">
+        <div class="contact-method"><dt>WhatsApp</dt><dd><a href="https://wa.me/79281542945" target="_blank" rel="noopener">+7 928 154-29-45</a></dd></div>
+        <div class="contact-method"><dt>Адрес</dt><dd>Проспект Ленина, 54, Ростов-на-Дону</dd></div>
+        <div class="contact-method"><dt>Рейтинг</dt><dd>4,8 · 232 оценки на Яндекс Картах</dd></div>
+        <div class="contact-method"><dt>Запись</dt><dd>WhatsApp и Telegram, время подтвердит администратор</dd></div>
+        <div class="contact-method"><dt>Маршрут</dt><dd><a href="https://yandex.ru/maps/org/sharm/1266150798/" target="_blank" rel="noopener">Открыть в Яндекс Картах ↗</a></dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="demo-note">Демонстрационный макет для переговоров. Не официальный сайт салона «Шарм». Контакты и рейтинг — из публичной карточки на Яндекс Картах; услуги и отзывы — демо-контент.</span>
+    <a href="https://yandex.ru/maps/org/sharm/1266150798/" target="_blank" rel="noopener">Источник данных ↗</a>
+  </footer>
+</body>
+</html>
