@@ -24,7 +24,7 @@ const easeOut = (x) => 1 - Math.pow(1 - x, 3);
 
 export async function init(viewport) {
   const stage = createStage(viewport, {
-    background: '#efe1da',
+    background: '#f3ede3',
     cameraPosition: [3.9, 2.4, 5.2],
     target: [0, 1.32, 0],
     fov: 34,
@@ -33,7 +33,7 @@ export async function init(viewport) {
     maxDistance: 12,
   });
   const { scene } = stage;
-  scene.fog = new THREE.Fog('#efe1da', 13, 26);
+  scene.fog = new THREE.Fog('#f3ede3', 13, 26);
   stage.renderer.toneMappingExposure = 1.02;
 
   const skin = new THREE.MeshStandardMaterial({
@@ -69,8 +69,8 @@ export async function init(viewport) {
   });
   const brass = new THREE.MeshPhysicalMaterial({ color: '#b98d54', roughness: 0.22, metalness: 0.9 });
   const glass = new THREE.MeshPhysicalMaterial({ color: '#f8efe7', roughness: 0.05, metalness: 0.7 });
-  const platformMaterial = new THREE.MeshStandardMaterial({ color: '#d8bfb3', roughness: 0.7 });
-  const floorMaterial = new THREE.MeshStandardMaterial({ color: '#e6d3c8', roughness: 0.86 });
+  const platformMaterial = new THREE.MeshStandardMaterial({ color: '#e9dcc8', roughness: 0.7 });
+  const floorMaterial = new THREE.MeshStandardMaterial({ color: '#e2d3c0', roughness: 0.86 });
   const bulbMaterial = new THREE.MeshStandardMaterial({
     color: '#fff2df',
     emissive: '#ffd9a6',
